@@ -9,9 +9,9 @@
 <script src='build/build.js'></script>
 <script>
 
-var isKey = require('is-key');
+var key = require('is-key');
 document.getElementsByTagName('textarea')[0].onkeyup = function(e){
-  if (isKey(e, ['i', 'b', 'shift', 'command'])){
+  if (key(e, ['i', 'b', 'shift', 'command'])){
     console.log('hiya');
   }
 }
