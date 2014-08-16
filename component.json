@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "keywords": [],
   "dependencies": {
-    "yields/keycode": "*"
+    "yields/keycode": "1.1.0"
   },
   "development": {
     "component/assert": "*"
