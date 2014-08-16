@@ -10,11 +10,12 @@
 <script>
 
 var key = require('is-key');
-document.getElementsByTagName('textarea')[0].onkeyup = function(e){
-  if (key(e, ['i', 'b', 'shift', 'command'])){
-    console.log('hiya');
+var isArrow = key('left', 'right', 'up', 'down');
+document.getElementsByTagName('textarea')[0].onkeyup = function (e) {
+  if (isArrow(e)) {
+    console.log('arrow key pressed');
   }
-}
+};
 
 </script>
 </body>

@@ -1,11 +1,22 @@
+/**
+ * Module dependencies
+ */
+
 var keycode = require('keycode');
 
-module.exports = function(e, keys){
-  var key = e.keyCode || e.charCode;
-  for (var i = 0, len = keys.length; i < len; i++) {
-    if (keycode(keys[i]) === key) {
-      return true;
-    }
+/**
+ * is key
+ *
+ * @param  {Array} keys
+ * @return {Function}
+ */
+
+module.exports = function () {
+  var keys = {};
+  for (var i = 0; i < arguments.length; i++) {
+    keys[keycode(arguments[i])] = true;
   }
-  return false;
-}
+  return function (e) {
+    return keys[e.keyCode || e.charCode];
+  };
+};

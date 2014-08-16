@@ -1,7 +1,7 @@
 
 # is-key
 
-  determine if a particular key was pressed in an event handler
+  Determine if a particular key was pressed in an event handler
 
 ## Installation
 
@@ -13,11 +13,12 @@
 
 ```javascript
 var key = require('is-key');
-el.onkeyup = function(e){
-  if (key(e, ['i', 'b', 'shift', 'command'])){
-    console.log('its one of those');
+var isArrow = key('left', 'right', 'up', 'down');
+el.onkeyup = function (e) {
+  if (isArrow(e)) {
+    // arrow key pressed
   }
-}
+};
 ```
 
 
