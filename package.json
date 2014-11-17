@@ -1,0 +1,27 @@
+{
+  "name": "is-key",
+  "version": "1.0.1",
+  "description": "determine if an event is a key",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmcmahen/is-key.git"
+  },
+  "keywords": [
+    "keyname",
+    "keypress",
+    "keydown"
+  ],
+  "author": "Ben McMahen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmcmahen/is-key/issues"
+  },
+  "homepage": "https://github.com/bmcmahen/is-key",
+  "dependencies": {
+    "yields-keycode": "^1.1.0"
+  }
+}

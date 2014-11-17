@@ -2,7 +2,13 @@
  * Module dependencies
  */
 
-var keycode = require('keycode');
+var keycode;
+
+try {
+  keycode = require('keycode');
+} catch(err) {
+  keycode = require('yields-keycode');
+}
 
 /**
  * is key

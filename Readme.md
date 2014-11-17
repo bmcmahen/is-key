@@ -5,9 +5,10 @@
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Install with NPM, Component, or Duo:
 
-    $ component install bmcmahen/is-key
+    $ npm install bmcmahen/is-key
+
 
 ## Usage
 
