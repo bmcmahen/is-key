@@ -23,5 +23,8 @@
   "homepage": "https://github.com/bmcmahen/is-key",
   "dependencies": {
     "yields-keycode": "^1.1.0"
+  },
+  "browser": {
+    "keycode": "yields-keycode"
   }
 }
