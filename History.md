@@ -1,3 +1,6 @@
+## 1.0.2
+Browserify fix
+
 ## 1.0.1
 Add Package.json
 
